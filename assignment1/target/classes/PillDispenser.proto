@@ -1,0 +1,36 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package assign3.grpc;
+
+service PillDispenserService
+{
+    rpc downloadMedPlan (DownloadReq) returns (MedPlan);
+    rpc sendMedicationStatus (TakenMedication) returns (EmptyMessage);
+}
+
+message DownloadReq
+{
+    int32 patientId = 1;
+}
+
+message Medication
+{
+    int32 medicationId = 1;
+    string name = 2;
+    string intakeInterval = 3;
+}
+
+message MedPlan
+{
+    repeated Medication medication = 1;
+}
+
+message TakenMedication
+{
+    int32 patientId = 1;
+    int32 medicationId = 2;
+    string name = 3;
+    string taken = 4;
+}
+
+message EmptyMessage{}

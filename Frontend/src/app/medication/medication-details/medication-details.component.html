@@ -1,0 +1,209 @@
+<ng-container *ngIf="!medicationData && !addMedication &&!addMedicationToMedPlan">
+
+    <div class="row justify-content-center py-5">
+      <div class="alert alert-secondary border-secondary col-sm-11 col-md-8 text-center text-muted" role="alert">
+        <i class="fa fa-mouse-pointer mr-1" aria-hidden="true"></i>
+        Please select a medication
+      </div>
+    </div>
+  </ng-container>
+  
+  <ng-container *ngIf="medicationData || addMedication || addMedicationToMedPlan">
+    <div class="row justify-content-center mt-4">
+      <div class="col">
+        <div class="card border-secondary">
+  
+          <!-- Card Header: holding the medication id -->
+          <h4 class="card-header bg-secondary" *ngIf="medicationData && !addMedication">
+            {{"ID: "}}{{ medicationData.medicationId }} {{"Name: "}} {{medicationData.name}}
+          </h4>
+          <!-- End: Card Header -->
+  
+          <!-- Card Header when pressing add new account button: holding descriptive text -->
+          <h4 class="card-header bg-secondary" *ngIf="!medicationData && addMedication">
+            {{"Add new medication"}}
+          </h4>
+          <!-- End: Card Header -->
+
+          <!-- Card Header when pressing add new account button: holding descriptive text -->
+          <h4 class="card-header bg-secondary" *ngIf="!medicationData && !addMedication && addMedicationToMedPlan">
+              {{"Add Medication to MedicationPlan"}}
+            </h4>
+            <!-- End: Card Header -->
+  
+          <!-- Card Body: holding the editable medication fields -->
+          <div class="card-body">
+            <div class="my-4">
+
+                <!-- Top row -->
+
+                <!-- Top row when inserting new Medication -->
+                <div class="row" *ngIf="!medicationData && addMedication">
+                    <div class="col" > 
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="nameForm" appearance="outline">
+                            <mat-label>Medication Name</mat-label>
+                            <input matInput [formControl]="nameForm" required>
+                            <mat-hint *ngIf="nameForm.untouched">Enter medication Name</mat-hint>
+                          </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col" > 
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="intakeInterval" appearance="outline">
+                            <mat-label>Intake Interval</mat-label>
+                            <input matInput [formControl]="intakeIntervalForm" required>
+                            <mat-hint *ngIf="nameForm.untouched">Enter intake interval for medication</mat-hint>
+                          </mat-form-field>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Top row when visualizing Medication details -->
+                <div class="row" *ngIf="medicationModel && !addMedication">
+                  <div class="col">
+                    <div class="form-group">
+                      <label *ngIf="medicationData && !addMedication" class="col-form-label" for="inputLarge">Side Effects</label>
+                      <input *ngIf="medicationData && !addMedication" class="form-control" type="text" name="sideEffects" required [(ngModel)]="medicationData.sideEffects">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label *ngIf="medicationData && !addMedication" class="col-form-label" for="inputLarge">Dosage</label>
+                      <input *ngIf="medicationData && !addMedication" class="form-control" type="text" name="dosage" required [(ngModel)]="medicationData.dosage">
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Top row -->
+
+
+                <!-- Top row when adding medication to medication plan  -->
+                <div class="row" *ngIf="!medicationData && !addMedication && addMedicationToMedPlan">
+                    <div class="col">
+                        <div class="form-group">
+                            <mat-form-field  class="mat-input-form" type="text" name="medicationId" appearance="outline">
+                                <mat-label>Medication ID</mat-label>
+                                <input matInput [formControl]="medicationIdForm" required>
+                                <mat-hint *ngIf="medicationIdForm.untouched">Enter medication ID</mat-hint>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <mat-form-field  class="mat-input-form" type="text" name="medPlanId" appearance="outline">
+                                <mat-label>Medication Plan ID</mat-label>
+                                <input matInput [formControl]="medPlanIdForm" required>
+                                <mat-hint *ngIf="medPlanIdForm.untouched">Enter medication plan ID</mat-hint>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- End: Top row when visualizing adding medication to medication plan  -->
+
+
+                <!-- Second row -->
+
+                <!-- Second row when visualizing Medication details -->
+                <div class="row" *ngIf="medicationModel && !addMedication && !addMedicationToMedPlan">
+                  <div class="col">
+                    <div class="form-group">
+                      <label *ngIf="medicationData && !addMedication" class="col-form-label" for="inputLarge">Intake Interval</label>
+                      <input *ngIf="medicationData && !addMedication" class="form-control" type="text" name="intakeInterval" required [(ngModel)]="medicationData.intakeInterval">
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Second row -->
+
+                <!-- Second row when inserting new Medication -->
+                <div class="row" *ngIf="addMedication">
+                  <div class="col">
+                      <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="sideEffects" appearance="outline">
+                              <mat-label>Side effects</mat-label>
+                              <input matInput [formControl]="sideEffectsForm" required>
+                              <mat-hint *ngIf="sideEffectsForm.untouched">Enter side effects</mat-hint>
+                            </mat-form-field>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="dosage" appearance="outline">
+                              <mat-label>Dosage</mat-label>
+                              <input matInput [formControl]="dosageForm" required>
+                              <mat-hint *ngIf="dosageForm.untouched">Enter medication dosage</mat-hint>
+                            </mat-form-field>
+                      </div>
+                  </div>
+                </div>
+                <!-- End: Second row -->
+
+
+              </div>
+            </div>
+            <!-- End: Card Body -->
+          </div>
+          
+
+
+          <!-- Card footer: holding the Save / Cancel and Delete button for single Medication data -->
+        <div class="card-footer text-muted">
+          <div class="form-inline d-flex">
+            <!-- Save -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="medicationData && !addMedication"
+              [disabled]="!hasMedicationDataChanged() || isSaving || isRemoving" [ngClass]="{'disabled': !hasMedicationDataChanged()}"
+              (click)="onMedicationUpdate()">
+              <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+              <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+              Update Medication
+            </button>
+
+
+            <!-- Insert New Medication -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="addMedication"
+              (click)="onNewMedicationInsert()">
+              <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+              <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+              Save New Medication
+            </button>
+
+            <!-- Clear Form (when adding new medication) -->
+            <button type="button" class="btn btn-outline-primary" role="button" *ngIf="addMedication"
+              (click)="clearFormInsert()">
+              <i class="fas fa-times mr-2"></i>
+              Clear Form
+            </button>
+
+            <!--Reset form to initial state when trying to update-->
+            <button type="button" class="btn btn-outline-primary" role="button" *ngIf="medicationData && !addMedication"
+            [disabled]="!hasMedicationDataChanged()"
+              [ngClass]="{'disabled': !hasMedicationDataChanged() || isSaving || isRemoving}"
+              (click)="getMedicationDetailsData(medicationData.medicationId)">
+              <i class="fas fa-times mr-2"></i>
+              Cancel
+            </button>
+
+            <!-- Delete medication-->
+            <button *ngIf="medicationData && !addMedication" type="button" class="btn btn-danger ml-auto" role="button" [disabled]="isRemoving || isSaving"
+              [ngClass]="{'disabled': isRemoving}" (click)="onMedicationDelete()">
+              <i class="fas fa-trash" *ngIf="!isRemoving"></i>
+              <i class="fa fa-spinner fa-spin" *ngIf="isRemoving"></i>
+            </button>
+
+
+            <!-- Add Medication (to medication plan) -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="!medicationData && !addMedication && addMedicationToMedPlan"
+              (click)="onAddMedicationToMedPlan()">
+              <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+              <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+              Add Medication
+            </button>
+            
+          </div>
+        </div>
+        <!-- End: Card footer -->
+
+
+  
+        </div>
+      </div>
+  </ng-container>

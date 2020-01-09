@@ -1,0 +1,38 @@
+.root
+{
+    -fx-background-color: #dcdcdc;
+    -fx-font-family: Helvetica;
+}
+
+.table-view
+{
+    -fx-background-color: #eeeeee;
+    -fx-min-width: 800;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1 1 1 1;
+
+}
+
+.table-view .column-header *
+{
+    -fx-background-color: #0057a9;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header .arrow
+{
+    -fx-background-color: #000000;
+}
+
+#topHBox
+{
+    -fx-background-color: #0057a9;
+}
+
+.hboxLabel
+{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+
+}

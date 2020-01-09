@@ -1,0 +1,169 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://dsassignment4.org/soap" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://dsassignment4.org/soap" targetNamespace="http://dsassignment4.org/soap">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://dsassignment4.org/soap">
+            <xs:element name="getPatientHistoryRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="patientId" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPatientHistoryResponse">
+                <xs:complexType>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="activity" type="tns:activity"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMedicationHistoryRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="patientId" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMedicationHistoryResponse">
+                <xs:complexType>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="medication" type="tns:medication"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="insertDayStatusRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="patientId" type="xs:integer"/>
+                        <xs:element name="day" type="xs:string"/>
+                        <xs:element name="status" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="insertDayStatusResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="responseCode" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="insertRecommendationRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="patientId" type="xs:integer"/>
+                        <xs:element name="recommendation" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="insertRecommendationResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="responseCode" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="activity">
+                <xs:sequence>
+                    <xs:element name="activityId" type="xs:integer"/>
+                    <xs:element name="patientId" type="xs:integer"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="startTime" type="xs:string"/>
+                    <xs:element name="endTime" type="xs:string"/>
+                    <xs:element name="behavior" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="medication">
+                <xs:sequence>
+                    <xs:element name="medicationId" type="xs:integer"/>
+                    <xs:element name="patientId" type="xs:integer"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="status" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getPatientHistoryRequest">
+        <wsdl:part element="tns:getPatientHistoryRequest" name="getPatientHistoryRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertDayStatusResponse">
+        <wsdl:part element="tns:insertDayStatusResponse" name="insertDayStatusResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertDayStatusRequest">
+        <wsdl:part element="tns:insertDayStatusRequest" name="insertDayStatusRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertRecommendationResponse">
+        <wsdl:part element="tns:insertRecommendationResponse" name="insertRecommendationResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getMedicationHistoryResponse">
+        <wsdl:part element="tns:getMedicationHistoryResponse" name="getMedicationHistoryResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getMedicationHistoryRequest">
+        <wsdl:part element="tns:getMedicationHistoryRequest" name="getMedicationHistoryRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getPatientHistoryResponse">
+        <wsdl:part element="tns:getPatientHistoryResponse" name="getPatientHistoryResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="insertRecommendationRequest">
+        <wsdl:part element="tns:insertRecommendationRequest" name="insertRecommendationRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="DoctorsPort">
+        <wsdl:operation name="getPatientHistory">
+            <wsdl:input message="tns:getPatientHistoryRequest" name="getPatientHistoryRequest"> </wsdl:input>
+            <wsdl:output message="tns:getPatientHistoryResponse" name="getPatientHistoryResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertDayStatus">
+            <wsdl:input message="tns:insertDayStatusRequest" name="insertDayStatusRequest"> </wsdl:input>
+            <wsdl:output message="tns:insertDayStatusResponse" name="insertDayStatusResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertRecommendation">
+            <wsdl:input message="tns:insertRecommendationRequest" name="insertRecommendationRequest"> </wsdl:input>
+            <wsdl:output message="tns:insertRecommendationResponse" name="insertRecommendationResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMedicationHistory">
+            <wsdl:input message="tns:getMedicationHistoryRequest" name="getMedicationHistoryRequest"> </wsdl:input>
+            <wsdl:output message="tns:getMedicationHistoryResponse" name="getMedicationHistoryResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="DoctorsPortSoap11" type="tns:DoctorsPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getPatientHistory">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getPatientHistoryRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getPatientHistoryResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertDayStatus">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="insertDayStatusRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="insertDayStatusResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertRecommendation">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="insertRecommendationRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="insertRecommendationResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMedicationHistory">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getMedicationHistoryRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getMedicationHistoryResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="DoctorsPortService">
+        <wsdl:port binding="tns:DoctorsPortSoap11" name="DoctorsPortSoap11">
+            <soap:address location="http://localhost:8081/ws"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

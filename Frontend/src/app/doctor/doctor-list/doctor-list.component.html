@@ -1,0 +1,54 @@
+<ng-container *ngIf="isProcessing; else doctors">
+        <app-loader [isLoading]="isProcessing"></app-loader>
+      </ng-container>
+      
+      <ng-template #doctors>
+      
+        <!-- Header -->
+        <div class="row my-4">
+          <div class="col">
+            <h4 class="font-weight-bold">
+              Doctors
+              <button class="btn btn-primary float-right"
+              (click) = "onAddDoctor()">
+              <i class="fas fa-user-plus margin--right__sm"></i>
+              Add Doctor
+              </button>
+            </h4>
+          </div>
+        </div>
+        <!-- End: Header -->
+      
+        <div class="row mb-5 pb-5">
+      
+          <!-- Doctor List column -->
+          <div class="col-sm-4">
+            <div class="col--cards">
+              <h6 class="col--cards__title text-muted margin--bottom__sm">Name</h6>
+              <div class="col--cards__wrapper col--cards__wrapper--list list-group">
+      
+                <!-- Doctor Item -->
+                <app-doctor-item *ngFor="let doctor of doctorModel.all; let i = index" [doctorData]="doctor" [index]="i"
+                  (selectedDoctorId)="onDoctorIdSelected($event)">
+                </app-doctor-item>
+                <!-- End: Doctor Item -->
+      
+              </div>
+            </div>
+          </div>
+          <!-- End: Doctor List column -->
+      
+          <!-- Doctor details column -->
+          <div class="col-sm-8">
+            <div class="col--cards">
+              <h6 class="col--cards__title text-muted margin--bottom__sm">Details</h6>
+              <div class="col--cards__wrapper">
+                <app-doctor-details [doctorId]="doctorModel.selectedDoctorId" [addDoctor]="addDoctor" (onSaveSuccess)="getAllDoctors($event)"></app-doctor-details>
+              </div>
+            </div>
+          </div>
+          <!-- End: Doctor details column -->
+      
+        </div>
+      
+      </ng-template>

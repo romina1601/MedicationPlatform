@@ -1,0 +1,16 @@
+
+/**
+ * You can add global styles to this file, and also import other style files
+ */
+
+/* Bootstrap 4 and theme */
+@import './scss/_variables';
+@import '~bootstrap/scss/bootstrap';
+
+/* Forms */
+@import './scss/forms';
+/* Dropdown menus (materials)*/
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+/* Toast */
+@import './scss/toast.scss';

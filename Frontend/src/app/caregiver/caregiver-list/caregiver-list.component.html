@@ -1,0 +1,65 @@
+<ng-container *ngIf="isProcessing; else caregivers">
+        <app-loader [isLoading]="isProcessing"></app-loader>
+      </ng-container>
+      
+      <ng-template #caregivers>
+      
+        <!-- Header for when doctor is logged in -->
+        <div class="row my-4" *ngIf=!isCaregiver>
+          <div class="col">
+            <h4 class="font-weight-bold">
+              Caregivers
+              <button class="btn btn-primary float-right"
+              (click) = "onAddCaregiver()">
+              <i class="fas fa-user-plus margin--right__sm"></i>
+              Add Caregiver
+              </button>
+            </h4>
+          </div>
+        </div>
+        <!-- End: Header -->
+
+        <!-- Header for when caregiver is logged in -->
+        <div class="row my-4" *ngIf=isCaregiver>
+          <div class="col">
+            <h4 class="font-weight-bold">
+              Your Details
+            </h4>
+          </div>
+        </div>
+        <!-- End: Header -->
+      
+        <div class="row mb-5 pb-5">
+      
+          <!-- Caregiver List column -->
+          <div class="col-sm-4" *ngIf=!isCaregiver>
+            <div class="col--cards">
+              <h6 class="col--cards__title text-muted margin--bottom__sm">Name</h6>
+              <div class="col--cards__wrapper col--cards__wrapper--list list-group">
+      
+                <!-- Caregiver Item -->
+                <app-caregiver-item *ngFor="let caregiver of caregiverModel.all; let i = index" [caregiverData]="caregiver" [index]="i"
+                  (selectedCaregiverId)="onCaregiverIdSelected($event)">
+                </app-caregiver-item>
+                <!-- End: Caregiver Item -->
+      
+              </div>
+            </div>
+          </div>
+          <!-- End: Caregiver List column -->
+      
+          <!-- Caregiver details column -->
+          <div class="col-sm-8">
+            <div class="col--cards">
+              <h6 class="col--cards__title text-muted margin--bottom__sm">Details</h6>
+              <div class="col--cards__wrapper">
+                <app-caregiver-details [caregiverId]="caregiverModel.selectedCaregiverId" [addCaregiver]="addCaregiver"
+                [isCaregiver]="isCaregiver" [username]="username" (onSaveSuccess)="getAllCaregivers($event)"></app-caregiver-details>
+              </div>
+            </div>
+          </div>
+          <!-- End: Caregiver details column -->
+      
+        </div>
+      
+      </ng-template>
