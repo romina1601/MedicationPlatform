@@ -1,0 +1,4 @@
+version: "2.3"
+services:
+  rabbitmq_send:
+    image: project-assig2

@@ -55,12 +55,14 @@ public class Recv {
     public void run() throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.1.102");
+        //factory.setHost("localhost");
         Connection connection = factory.newConnection();
+        //System.out.println(connection.getServerProperties());
         Channel channel = connection.createChannel();
         JSONParser jsonParser = new JSONParser();
 
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        channel.queueDeclare(QUEUE_NAME, true, false, false, null);
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
 

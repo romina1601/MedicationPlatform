@@ -1,6 +1,6 @@
 syntax = "proto3";
 option java_multiple_files = true;
-package assign3.grpc;
+package assign3.grpc.generate;
 
 service PillDispenserService
 {

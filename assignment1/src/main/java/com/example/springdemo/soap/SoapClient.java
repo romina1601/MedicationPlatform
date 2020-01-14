@@ -35,7 +35,7 @@ public class SoapClient {
         request.setPatientId(BigInteger.valueOf(patientId));
 
         GetMedicationHistoryResponse response = (GetMedicationHistoryResponse)
-                template.marshalSendAndReceive("http://localhost:8081/ws", request);
+                template.marshalSendAndReceive("http://192.168.1.102:8081:8081/ws", request);
 
         List<GrpcMedicationDTO> medications = new ArrayList<>();
         for (Medication m : response.getMedication())
@@ -54,11 +54,12 @@ public class SoapClient {
     {
         template = new WebServiceTemplate(marshaller);
 
+
         GetPatientHistoryRequest request = new GetPatientHistoryRequest();
         request.setPatientId(BigInteger.valueOf(patientId));
 
         GetPatientHistoryResponse response = (GetPatientHistoryResponse)
-                template.marshalSendAndReceive("http://localhost:8081/ws", request);
+                template.marshalSendAndReceive("http://192.168.1.102:8081/ws", request);
 
         List<MonitoredDataDTO> activities = new ArrayList<>();
         DateFormat format = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss.S");

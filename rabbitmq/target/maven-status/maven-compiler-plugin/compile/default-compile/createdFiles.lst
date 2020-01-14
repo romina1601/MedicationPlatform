@@ -1,0 +1,5 @@
+com\rabbitmq\RabbitMqConfig.class
+com\rabbitmq\MonitoredData.class
+com\rabbitmq\MainClass.class
+com\rabbitmq\Recv.class
+com\rabbitmq\Send.class

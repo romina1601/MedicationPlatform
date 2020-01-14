@@ -53,6 +53,8 @@ public class EndpointsWebSecurityConfigurerAdapter extends WebSecurityConfigurer
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .antMatchers("/doctor/**").hasRole("DOCTOR")
                 .antMatchers("/users/**").hasRole("DOCTOR")
+                //.antMatchers("/users/**").permitAll()
+                //.antMatchers("/doctor/**").permitAll()
                 .antMatchers("/medicationPlan/**").hasRole("DOCTOR")
                 .antMatchers("/medication/**").hasRole("DOCTOR")
                 .antMatchers("/caregiver/**").hasAnyRole("CAREGIVER", "DOCTOR")

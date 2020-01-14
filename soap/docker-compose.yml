@@ -1,0 +1,9 @@
+version: "2.3"
+services:
+  soap:
+    image: project-assig4
+    ports:
+    - 8080:8080
+    - 6565:6565
+    environment:
+    - MYSQL_IP=192.168.1.102

@@ -5,8 +5,11 @@ import com.example.springdemo.dto.DoctorDTOs.DoctorDTO;
 import com.example.springdemo.dto.DoctorDTOs.DoctorViewDTO;
 import com.example.springdemo.dto.DoctorDTOs.JustDoctorDTO;
 import com.example.springdemo.dto.UsersDTOs.UsersDTO;
+import com.example.springdemo.entities.Doctor;
+import com.example.springdemo.entities.enums.UsersType;
 import com.example.springdemo.errorhandler.ResourceNotFoundException;
 import com.example.springdemo.services.DoctorService;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -94,5 +97,19 @@ public class DoctorController {
             return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
+
+    @GetMapping(value="/testcreate")
+    public ResponseEntity<?> insertTestDoctor() {
+        UsersDTO usersDTO = new UsersDTO("doctortest", "abcde", UsersType.DOCTOR);
+        JustDoctorDTO justDoctorDTO = new JustDoctorDTO("Test Doctor", "Testology");
+        DoctorDTO doctorDTO;
+        try {
+            doctorDTO = doctorService.insert(justDoctorDTO, usersDTO);
+            return new ResponseEntity<>(doctorDTO, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+        }
+    }
+
 
 }

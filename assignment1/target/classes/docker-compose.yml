@@ -1,0 +1,11 @@
+version: "2.3"
+services:
+  db:
+    image: mysql:latest
+    environment:
+    - MYSQL_ROOT_PASSWORD=1601
+    - MYSQL_DATABASE=medication_platform
+    - MYSQL_USER=testuser
+    - MYSQL_PASSWORD=1601
+    ports:
+    - 3306:3306

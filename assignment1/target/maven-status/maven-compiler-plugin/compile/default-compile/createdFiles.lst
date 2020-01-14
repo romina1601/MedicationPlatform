@@ -3,8 +3,10 @@ assign3\grpc\TakenMedication$Builder.class
 com\example\springdemo\repositories\CaregiverRepository.class
 generatedSOAPResources\InsertDayStatusRequest.class
 assign3\grpc\Medication$1.class
+com\example\springdemo\soap\SoapClient.class
 assign3\grpc\DownloadReqOrBuilder.class
 generatedSOAPResources\GetMedicationHistoryResponse.class
+com\example\springdemo\entities\Recommendation.class
 com\example\springdemo\validators\EmailFieldValidator.class
 com\example\springdemo\dto\builders\UsersBuilders\UsersBuilder.class
 com\example\springdemo\entities\Patient.class
@@ -12,6 +14,7 @@ assign3\grpc\PillDispenser.class
 com\example\springdemo\services\MedicationService.class
 com\example\springdemo\controller\UsersController.class
 com\example\springdemo\dto\builders\MedicationBuilders\MedicationBuilder.class
+com\example\springdemo\repositories\RecommendationRepository.class
 com\example\springdemo\dto\MedicationPlanDTOs\MedicationPlanDTO.class
 com\example\springdemo\dto\PatientDTOs\PatientViewDTO.class
 com\example\springdemo\dto\UsersDTOs\UsersSecurityDTO.class
@@ -36,13 +39,16 @@ com\example\springdemo\grpc\DownloadReqOrBuilder.class
 com\example\springdemo\grpc\PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class
 com\example\springdemo\grpc\EmptyMessage$Builder.class
 com\example\springdemo\grpc\PillDispenser.class
+com\example\springdemo\dto\MedicationDTOs\GrpcMedicationDTO.class
 com\example\springdemo\controller\MedicationController.class
 com\example\springdemo\grpc\PillDispenserServiceGrpc$PillDispenserServiceFileDescriptorSupplier.class
 com\example\springdemo\repositories\MedicationRepository.class
+com\example\springdemo\configuration\RabbitMqConfig.class
 com\example\springdemo\dto\UsersDTOs\UsersDTOWithUsername.class
 com\example\springdemo\errorhandler\EntityValidationException.class
 com\example\springdemo\dto\CaregiverDTOs\CaregiverDTO.class
 com\example\springdemo\grpc\EmptyMessage$1.class
+com\example\springdemo\dto\builders\RecommendationBuilders\RecommendationBuilder.class
 com\example\springdemo\grpc\Medication.class
 com\example\springdemo\entities\MonitoredData.class
 com\example\springdemo\grpc\PillDispenserServiceGrpc$PillDispenserServiceBaseDescriptorSupplier.class
@@ -57,6 +63,7 @@ com\example\springdemo\dto\MedicationDTOs\MedicationDTO.class
 com\example\springdemo\grpc\PillDispenser$1.class
 com\example\springdemo\configuration\WebSocketConfiguration.class
 com\example\springdemo\entities\enums\UsersType.class
+com\example\springdemo\dto\RecommendationDTOs\RecommendationDTO.class
 com\example\springdemo\grpc\DownloadReq$Builder.class
 assign3\grpc\PillDispenserServiceGrpc$PillDispenserServiceFileDescriptorSupplier.class
 assign3\grpc\MedPlanOrBuilder.class
@@ -123,6 +130,7 @@ com\example\springdemo\errorhandler\ExceptionHandlerResponseDTO.class
 com\example\springdemo\dto\CaregiverDTOs\JustCaregiverDTO.class
 com\example\springdemo\dto\PatientDTOs\PatientDTO.class
 com\example\springdemo\grpc\MedPlan$Builder.class
+com\example\springdemo\dto\MonitoredDataDTOs\MonitoredDataDTO.class
 com\example\springdemo\repositories\GrpcMedicationRepository.class
 com\example\springdemo\controller\CaregiverController.class
 com\example\springdemo\errorhandler\IncorrectParameterException.class
@@ -134,6 +142,7 @@ com\example\springdemo\dto\builders\MedicationPlanBuilders\MedicationPlanUpdateB
 com\example\springdemo\dto\CaregiverDTOs\CaregiverInsertDTO.class
 com\example\springdemo\grpc\MedicationOrBuilder.class
 assign3\grpc\PillDispenserServiceGrpc.class
+com\example\springdemo\configuration\SoapConfig.class
 com\example\springdemo\dto\builders\CaregiverBuilders\CaregiverBuilder.class
 com\example\springdemo\services\CaregiverService.class
 com\example\springdemo\dto\PatientDTOs\PatientUpdateDTO.class

@@ -2,38 +2,292 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8f19259-e16d-4ea9-b757-c4f1833e1489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/dto/MonitoredDataDTOs/MonitoredDataDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/dto/RecommendationDTOs/RecommendationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/dto/builders/RecommendationBuilders/RecommendationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/entities/Recommendation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/repositories/RecommendationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-details/patient-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-list/patient-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-list/patient-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-list/patient-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient-list/patient-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/patient/patient.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/patient/patient.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/app/shared/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/app/shared/services/api.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/database/medication_platform.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/configuration/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/resources/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/src/main/resources/wrapper.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../grpc/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rabbitmq/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rabbitmq/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/activity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soap/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soap/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/services/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/services/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/spring-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/spring-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/META-INF/sun-jaxb.episode" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/META-INF/sun-jaxb.episode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/configuration/EndpointsWebSecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/configuration/EndpointsWebSecurityConfigurerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/configuration/WebSocketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/configuration/WebSocketConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/rabbitmq/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/rabbitmq/Recv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/soap/SoapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/com/example/springdemo/soap/SoapClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetMedicationHistoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetMedicationHistoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetMedicationHistoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetMedicationHistoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetPatientHistoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetPatientHistoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetPatientHistoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/GetPatientHistoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertDayStatusRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertDayStatusRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertDayStatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertDayStatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertRecommendationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertRecommendationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertRecommendationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/InsertRecommendationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/ObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/java/generatedSOAPResources/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/META-INF/sun-jaxb.episode" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/META-INF/sun-jaxb.episode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/DownloadReq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/EmptyMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlanOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/MedPlanOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/PillDispenserServiceGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/assign3/grpc/TakenMedication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/SpringDemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/SpringDemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/EndpointsWebSecurityConfigurerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/EndpointsWebSecurityConfigurerAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/JpaPersistanceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/JpaPersistanceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/WebSocketConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/configuration/WebSocketConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/CaregiverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/CaregiverController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/MedicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/MedicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/MedicationPlanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/MedicationPlanController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/errorhandler/RestResponseEntityExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/controller/errorhandler/RestResponseEntityExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverForPatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverForPatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverInsertDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverInsertDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverUpdaateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverUpdaateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverViewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/CaregiverViewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/JustCaregiverDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/CaregiverDTOs/JustCaregiverDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorInsertDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorInsertDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorViewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/DoctorViewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/JustDoctorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/DoctorDTOs/JustDoctorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/GrpcMedicationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/GrpcMedicationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationInsertDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationInsertDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationWithMedPlanDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationDTOs/MedicationWithMedPlanDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanForPatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanForPatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanInsertDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanInsertDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanUpdateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MedicationPlanDTOs/MedicationPlanUpdateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MonitoredDataDTOs/MonitoredDataDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/MonitoredDataDTOs/MonitoredDataDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/JustPatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/JustPatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientInsertDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientInsertDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientUpdateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientUpdateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientViewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/PatientDTOs/PatientViewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/RecommendationDTOs/RecommendationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/RecommendationDTOs/RecommendationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersDTOWithUsername.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersDTOWithUsername.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersSecurityDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersSecurityDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersViewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/UsersDTOs/UsersViewDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverForPatientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverForPatientBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverViewBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/CaregiverViewBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/JustCaregiverBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/CaregiverBuilders/JustCaregiverBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorInsertBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorInsertBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorViewBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/DoctorBuilders/DoctorViewBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationBuilders/MedicationBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationBuilders/MedicationBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationBuilders/MedicationInsertBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationBuilders/MedicationInsertBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanForPatientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanForPatientBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanInsertBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanInsertBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanUpdateBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/MedicationPlanBuilders/MedicationPlanUpdateBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/JustPatientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/JustPatientBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientInsertBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientInsertBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientViewBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/PatientBuilders/PatientViewBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/RecommendationBuilders/RecommendationBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/RecommendationBuilders/RecommendationBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersSecurityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersSecurityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersViewBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersViewBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersWithUsernameBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/dto/builders/UsersBuilders/UsersWithUsernameBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Caregiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Caregiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Doctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/GrpcMedication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/GrpcMedication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/MedicationPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/MedicationPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/MonitoredData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/MonitoredData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Recommendation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Recommendation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/enums/UsersType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/entities/enums/UsersType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/DuplicateEntryException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/DuplicateEntryException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/EntityValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/EntityValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/ExceptionHandlerResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/ExceptionHandlerResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/IncorrectParameterException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/IncorrectParameterException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/errorhandler/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/DownloadReq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/EmptyMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlanOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/MedPlanOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/PillDispenserServiceGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/TakenMedication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/server/PillDispenserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/grpc/server/PillDispenserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/rabbitmq/Recv.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/rabbitmq/Recv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/repositories/MedicationPlanRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/repositories/MedicationPlanRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/repositories/RecommendationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/repositories/RecommendationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/CaregiverService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/CaregiverService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/DoctorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/DoctorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MedicationPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MedicationPlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MedicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MedicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MonitoredDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/MonitoredDataService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/PatientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/services/UsersService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/soap/SoapClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/soap/SoapClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/EmailFieldValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/EmailFieldValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/FieldValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/FieldValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/UsersFieldValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/com/example/springdemo/validators/UsersFieldValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/GetMedicationHistoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/GetMedicationHistoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/GetPatientHistoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/GetPatientHistoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertDayStatusRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertDayStatusRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertDayStatusResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertDayStatusResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertRecommendationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertRecommendationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertRecommendationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/InsertRecommendationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/classes/generatedSOAPResources/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/grpc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/src/main/java/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/src/main/java/com/grpc/gui/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/src/main/java/gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/src/main/java/com/grpc/gui/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/src/main/proto/PillDispenser.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/src/main/proto/PillDispenser.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/PillDispenser.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/PillDispenser.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/DownloadReq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/EmptyMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlanOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/MedPlanOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc$PillDispenserServiceStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/PillDispenserServiceGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/TakenMedication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/client/PillDispenserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/assign3/grpc/client/PillDispenserClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/entities/MedicationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/classes/entities/MedicationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/gui/MainGUI$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/gui/MainGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/classes/gui/MainGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MonitoredData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rabbitmq/MonitoredData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rabbitmq/Recv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rabbitmq/Send.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MonitoredData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Recv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Send.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../soap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soap1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/config/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/config/CountryEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/config/CountryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/config/WebServiceConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/Currency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/GetCountryRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/GetCountryResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../soap1/target/classes/hello/gs_producing_web_service/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/src/main/java/config/WebServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/config/WebServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/META-INF/JAXB/episode_xjc.xjb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/JpaPersistanceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/JpaPersistanceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/WebServiceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/WebServiceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/controllers/DoctorsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/controllers/DoctorsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/services/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/services/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/config/services/GrpcMedicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/config/services/GrpcMedicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/entities/GrpcMedication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/entities/GrpcMedication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/entities/MonitoredData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/entities/MonitoredData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetMedicationHistoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetMedicationHistoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetMedicationHistoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetMedicationHistoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetPatientHistoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetPatientHistoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetPatientHistoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/GetPatientHistoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertDayStatusRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertDayStatusRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertDayStatusResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertDayStatusResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertRecommendationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertRecommendationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertRecommendationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/InsertRecommendationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/target/classes/org/dsassignment4/soap/Medication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/META-INF/JAXB/episode_xjc.xjb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/GetMedicationHistoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/GetMedicationHistoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/GetMedicationHistoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/GetMedicationHistoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/GetPatientHistoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/GetPatientHistoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/GetPatientHistoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/GetPatientHistoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/InsertDayStatusRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/InsertDayStatusRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/InsertDayStatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/InsertDayStatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/InsertRecommendationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/InsertRecommendationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/InsertRecommendationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/InsertRecommendationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/ObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/generated-sources/jaxb/org/dsassignment4/soap/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../soap/src/main/java/org/dsassignment4/soap/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soap/target/jaxb2/.xjc-xjcStaleFlag" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,17 +354,149 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-933477842">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Dockerfile" value="35" />
+          <entry key="java" value="622" />
+          <entry key="xml" value="160" />
+          <entry key="yml" value="81" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Dockerfile" value="35" />
+          <entry key="JAVA" value="622" />
+          <entry key="XML" value="160" />
+          <entry key="YAML" value="81" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Dockerfile" value="1" />
+          <entry key="class" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="5" />
+          <entry key="properties" value="1" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="5" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Send.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/Send.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="638">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/MonitoredData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3564">
+              <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="34" selection-end-line="2" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="108" column="19" selection-start-line="103" selection-start-column="12" selection-end-line="110" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -138,9 +524,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Recv.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MonitoredData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Send.java" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/resources/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbitmq/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbitmq/RabbitMqConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbitmq/Send.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbitmq/MonitoredData.java" />
       </list>
     </option>
   </component>
@@ -157,10 +551,32 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="assignment2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="assignment2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="assignment2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="1935" />
-    <option name="height" value="995" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,7 +584,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,50 +593,38 @@
             </path>
             <path>
               <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574775701625" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578958000533" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rabbitmq" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Romina\Facultate\An IV\Sem I\DS\Laborator\ds_30443_bailaromina_project\rabbitmq\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -235,24 +638,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Send">
+  <component name="RunManager" selected="Spring Boot.MainClass">
     <configuration name="MonitoredData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MonitoredData" />
-      <module name="rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.rabbitmq.MonitoredData" />
+      <module name="assignment2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Recv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Recv" />
-      <module name="rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.rabbitmq.Recv" />
+      <module name="assignment2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Send" />
+      <option name="MAIN_CLASS_NAME" value="com.rabbitmq.Send" />
       <module name="assignment2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClass" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="assignment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rabbitmq.MainClass" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,9 +677,11 @@
       <item itemvalue="Application.Send" />
       <item itemvalue="Application.Recv" />
       <item itemvalue="Application.MonitoredData" />
+      <item itemvalue="Spring Boot.MainClass" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MainClass" />
         <item itemvalue="Application.Send" />
         <item itemvalue="Application.Recv" />
         <item itemvalue="Application.MonitoredData" />
@@ -289,43 +707,58 @@
       <workItem from="1577989111984" duration="427000" />
       <workItem from="1577991647294" duration="2062000" />
       <workItem from="1578410977154" duration="419000" />
+      <workItem from="1578666973821" duration="1259000" />
+      <workItem from="1578743446120" duration="1273000" />
+      <workItem from="1578831011234" duration="949000" />
+      <workItem from="1578864040298" duration="6188000" />
+      <workItem from="1578925478002" duration="1519000" />
+      <workItem from="1578927415203" duration="4758000" />
+      <workItem from="1578933229698" duration="8504000" />
+      <workItem from="1578944022855" duration="9860000" />
+      <workItem from="1578996505017" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44581000" />
+    <option name="totallyTimeSpent" value="78900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28322148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2557047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32765958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3134752" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3281879" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +766,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Function.java">
@@ -357,41 +794,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/target/classes/com/rabbitmq/MonitoredData.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/Recv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        <state relative-caret-position="132">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Recv.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/RabbitMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="389" column="16" selection-start-line="389" selection-start-column="16" selection-end-line="389" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbitmq/MonitoredData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="196" column="20" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="34" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <caret selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MonitoredData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="95" column="53" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+        <state relative-caret-position="132">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="22">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Send.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2376">
+          <caret line="108" column="19" selection-start-line="103" selection-start-column="12" selection-end-line="110" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -412,7 +910,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -424,6 +922,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -447,11 +946,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>rabbitmq</last-edited>
+          <last-edited>assignment2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

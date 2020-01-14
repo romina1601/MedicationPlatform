@@ -245,6 +245,14 @@
 
         <!-- END: ASSIGNMENT 4 -->
 
+		<!-- PROJECT -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- END: PROJECT -->
+
 	</dependencies>
 
 
@@ -264,6 +272,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- PROJECT-->
+				<configuration>
+                    <finalName>project-assig1</finalName>
+                </configuration>
+                <!-- END: PROJECT -->
 			</plugin>
 
             <plugin>
@@ -299,8 +312,8 @@
 			<!-- ASSIGNMENT 4 -->
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
-                <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>0.13.2</version>
+                <artifactId>maven-jaxb22-plugin</artifactId>
+                <!--<version>0.13.3</version>-->
                 <executions>
                     <execution>
                         <goals>
@@ -320,6 +333,7 @@
 
 			<!-- END: ASSIGNMENT 4 -->
 		</plugins>
+        <!--<finalName>project-assig1</finalName>-->
 	</build>
 
 

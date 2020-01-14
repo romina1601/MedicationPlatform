@@ -29,7 +29,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema doctorsSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("DoctorsPort");
-        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setLocationUri("http://192.168.1.102/ws");
         wsdl11Definition.setTargetNamespace("http://dsassignment4.org/soap");
         wsdl11Definition.setSchema(doctorsSchema);
         return wsdl11Definition;
