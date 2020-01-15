@@ -1,0 +1,6 @@
+version: "2.3"
+services:
+    frontend:
+        image: frontend2_frontend
+        ports:
+          - 4200:4200

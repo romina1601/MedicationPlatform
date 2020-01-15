@@ -1,0 +1,153 @@
+<ng-container *ngIf="!doctorData && !addDoctor">
+
+    <div class="row justify-content-center py-5">
+      <div class="alert alert-secondary border-secondary col-sm-11 col-md-8 text-center text-muted" role="alert">
+        <i class="fa fa-mouse-pointer mr-1" aria-hidden="true"></i>
+        Please select a doctor
+      </div>
+    </div>
+  </ng-container>
+  
+  <ng-container *ngIf="doctorData || addDoctor">
+    <div class="row justify-content-center mt-4">
+      <div class="col">
+        <div class="card border-secondary">
+  
+          <!-- Card Header when selecting a doctor: holding the doctor ID and name -->
+          <h4 class="card-header bg-secondary" *ngIf="doctorData && !addDoctor">
+            {{"ID: "}} {{ doctorData.doctorId }} {{"Name: "}} {{ doctorData.name }}
+          </h4>
+          <!-- End: Card Header -->
+  
+           <!-- Card Header when pressing add new doctor button: holding descriptive text -->
+           <h4 class="card-header bg-secondary" *ngIf="!doctorData && addDoctor">
+            {{"Add new doctor"}}
+          </h4>
+          <!-- End: Card Header -->
+  
+          <!-- Card Body: holding the editable doctor fields -->
+          <div class="card-body">
+            <div class="my-4">
+
+                <!-- Top row when inserting and updating a doctor-->
+                <div claass="row">
+                  <div class="col">
+                    <div class="form-group">
+                          <!-- For UPDATE-->
+                          <label *ngIf="doctorData && !addDoctor" class="col-form-label" for="inputLarge">Full name</label>
+                          <input *ngIf="doctorData && !addDoctor" class="form-control" type="text" name="name" required [(ngModel)]="doctorData.name">
+                          
+                          <!--For INSERT-->
+                          <mat-form-field *ngIf="!doctorData && addDoctor" class="mat-input-form" type="text" name="name" appearance="outline">
+                          <mat-label>Full name</mat-label>
+                          <input matInput [formControl]="nameForm" required>
+                          <mat-hint *ngIf="nameForm.untouched">Enter doctor's full name</mat-hint>
+                          </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <!-- For UPDATE-->
+                        <label *ngIf="doctorData && !addDoctor" class="col-form-label" for="inputLarge">Specialization</label>
+                        <input *ngIf="doctorData && !addDoctor" class="form-control" type="text" name="name" required [(ngModel)]="doctorData.specialization">
+                            
+                        <!--For INSERT-->
+                        <mat-form-field *ngIf="!doctorData && addDoctor" class="mat-input-form" type="text" name="specialization" appearance="outline">
+                          <mat-label>Specialization</mat-label>
+                          <input matInput [formControl]="specializationForm" required>
+                          <mat-hint *ngIf="nameForm.untouched">Enter doctor's specialization</mat-hint>
+                        </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Top row-->
+
+
+                <!-- Second row when inserting and updating a doctor-->
+                <div claass="row">
+                    <div class="col">
+                      <div class="form-group">
+                            <!-- For UPDATE-->
+                            <label *ngIf="doctorData && !addDoctor" class="col-form-label" for="inputLarge">Usernme</label>
+                            <input *ngIf="doctorData && !addDoctor" class="form-control" type="text" name="username" required [(ngModel)]="doctorData.username" disabled="true">
+                            
+                            <!--For INSERT-->
+                            <mat-form-field *ngIf="!doctorData && addDoctor" class="mat-input-form" type="text" name="username" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input matInput [formControl]="usernameForm" required>
+                            <mat-hint *ngIf="usernameForm.untouched">Enter username</mat-hint>
+                            </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col" *ngIf = "!doctorData && addDoctor">
+                      <div class="form-group"> 
+                          <!--For INSERT-->
+                          <mat-form-field *ngIf="!doctorData && addDoctor" class="mat-input-form" type="text" name="password" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input matInput [formControl]="passwordForm" required>
+                            <mat-hint *ngIf="passwordForm.untouched">Enter a password</mat-hint>
+                          </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End: Second row-->
+
+
+                  <!-- Third row when inserting a doctor-->
+                <div claass="row" *ngIf = "!doctorData && addDoctor">
+                  <div class="col">
+                    <div class="form-group">
+                      <mat-form-field class="mat-input-form" type="text" name="role" appearance="outline">
+                        <mat-label>Role</mat-label>
+                        <input matInput [formControl]="roleForm" required>
+                        <mat-hint *ngIf="roleForm.untouched">Enter the role ("DOCTOR")</mat-hint>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Second row-->
+
+              </div>
+          </div>
+          <!-- End: Card Body -->
+
+          <!-- Card footer: holding the Save / Cancel and Delete button for single doctor data -->
+        <div class="card-footer text-muted">
+            <div class="form-inline d-flex">
+              <!-- Save -->
+              <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="!addDoctor"
+                [disabled]="!hasDoctorDataChanged() || isSaving || isRemoving" 
+                [ngClass]="{'disabled': !hasDoctorDataChanged()}"
+                (click)="onDoctorSave()">
+                <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+                <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+                Save Doctor
+              </button>
+
+          <!-- Cancel -->
+          <!--It is disaled if no change has been made-->
+          <button type="button" class="btn btn-outline-primary" role="button" *ngIf="!addDoctor"
+            [disabled]="!hasDoctorDataChanged()"
+            [ngClass]="{'disabled': !hasDoctorDataChanged() || isSaving || isRemoving}"
+            (click)="getDoctorDetailsData(doctorData.doctorId)">
+            <i class="fas fa-times mr-2"></i>
+            Cancel
+          </button>
+
+          <!-- Insert New Doctor-->
+          <button *ngIf="addDoctor" type="button" class="btn btn-primary mr-2" role="button"
+            (click)="onDoctorInsert()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Insert New Doctor
+          </button>  
+  
+          </div>
+        </div>
+          <!-- End: Card footer -->
+  
+          
+        </div>
+      </div>
+    </div>
+  </ng-container>

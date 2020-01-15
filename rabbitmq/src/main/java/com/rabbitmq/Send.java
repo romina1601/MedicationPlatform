@@ -26,7 +26,8 @@ public class Send {
         List<MonitoredData> list = md.readData( "activity.txt" );
         //System.out.println(list.get(0).toString());
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("192.168.1.102");
+        //factory.setHost("192.168.1.102");
+		factory.setHost("192.168.43.97");
         //factory.setHost("localhost");
         try( Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()){

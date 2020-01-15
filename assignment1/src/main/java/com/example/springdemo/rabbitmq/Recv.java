@@ -55,7 +55,8 @@ public class Recv {
     public void run() throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("192.168.1.102");
+		factory.setHost("192.168.43.97");
+        //factory.setHost("192.168.1.102");
         //factory.setHost("localhost");
         Connection connection = factory.newConnection();
         //System.out.println(connection.getServerProperties());

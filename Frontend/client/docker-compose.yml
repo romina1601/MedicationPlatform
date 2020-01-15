@@ -1,0 +1,10 @@
+version: "2.3"
+services:
+    frontend:
+        image: project-frontend
+        container_name: client
+        restart: always
+        ports:
+        - 4200:4200
+        command: >
+            bash -c "npm install && ng serve --port 4200 --host 0.0.0.0"

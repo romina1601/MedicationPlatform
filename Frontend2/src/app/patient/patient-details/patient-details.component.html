@@ -1,0 +1,539 @@
+<ng-container *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && !activityReport && !medicationHistory">
+
+        <div class="row justify-content-center py-5">
+          <div class="alert alert-secondary border-secondary col-sm-11 col-md-8 text-center text-muted" role="alert">
+            <i class="fa fa-mouse-pointer mr-1" aria-hidden="true"></i>
+            Please select a patient
+          </div>
+        </div>
+      </ng-container>
+      
+      <ng-container *ngIf="patientData || addPatient || changeCaregiver || createMedPlan || activityReport || medicationHistory">
+        <div class="row justify-content-center mt-4">
+          <div class="col">
+            <div class="card border-secondary">
+      
+              <!-- Card Header when selecting a patient: holding the patient ID & name -->
+              <h4 class="card-header bg-secondary" *ngIf="patientData && !addPatient && !changeCaregiver && !createMedPlan">
+                {{ "ID: " }} {{ patientData.patientId }} {{ "Name: " }} {{ patientData.name }}
+              </h4>
+              <!-- End: Card Header -->
+      
+               <!-- Card Header when pressing add new Patient button: holding descriptive text -->
+              <h4 class="card-header bg-secondary" *ngIf="!patientData && addPatient && !changeCaregiver && !createMedPlan">
+                {{"Add new patient"}}
+              </h4>
+              <!-- End: Card Header -->
+
+              <!-- Card Header when pressing change caregiver button: holding descriptive text -->
+              <h4 class="card-header bg-secondary" *ngIf="!patientData && !addPatient && changeCaregiver && !createMedPlan">
+                  {{"Change a patient's caregiver"}}
+              </h4>
+              <!-- End: Card Header -->
+
+              <!-- Card Header when pressing create medPlan button: holding descriptive text -->
+              <h4 class="card-header bg-secondary" *ngIf="!patientData && !addPatient && !changeCaregiver && createMedPlan">
+                {{"Create a medication plan for a patient"}}
+              </h4>
+              <!-- End: Card Header -->
+
+
+      
+              <!-- Card Body: holding the editable patient fields -->
+              <div class="card-body">
+                <div class="my-4">
+                  
+                  <!--Card Body when add new patient button is pressed-->
+                  <!-- First row for update & insert-->
+                  <div class="row">
+                      <div *ngIf="patientData && !addPatient && !changeCaregiver" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Patient Name</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="nameForm" required [(ngModel)]="patientData.name">
+                          </div>
+                      </div>
+                    <div *ngIf="!patientData && addPatient && !changeCaregiver" class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="name" appearance="outline">
+                          <mat-label>Patient Name</mat-label>
+                          <input matInput [formControl]="nameForm" required>
+                          <mat-error *ngIf="nameForm.invalid">{{getNameErrorMessage()}}</mat-error>
+                          <mat-hint *ngIf="nameForm.untouched">Enter patient's name</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- First row -- just for CHANGE CAREGIVER-->
+                  <div class="row" *ngIf="!patientData && !addPatient && changeCaregiver">
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="patientIdForm" appearance="outline">
+                            <mat-label>Patient ID</mat-label>
+                            <input matInput [formControl]="patientIdForm" required>
+                            <mat-hint *ngIf="patientIdForm.untouched">Enter Patient's ID</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="caregiverIdForm" appearance="outline">
+                            <mat-label>New Caregiver ID</mat-label>
+                            <input matInput [formControl]="caregiverIdForm" required>
+                            <mat-hint *ngIf="caregiverIdForm.untouched">Enter new Caregiver's ID</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- End: First row -- just for CHANGE CAREGIVER -->
+
+                  <!-- First row -- just for CREATE MEDPLAN -->
+                  <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && createMedPlan">
+                    <div class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="patientIdForm" appearance="outline">
+                          <mat-label>Patient ID</mat-label>
+                          <input matInput [formControl]="patientIdForm" required>
+                          <mat-hint *ngIf="patientIdForm.untouched">Enter Patient's ID</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="medPlanName" appearance="outline">
+                          <mat-label>Medication Plan Name</mat-label>
+                          <input matInput [formControl]="medPlanNameForm" required>
+                          <mat-hint *ngIf="medPlanNameForm.untouched">Enter a name for the Medication Plan</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                </div>
+                <!-- End: First row -- just for CREATE MEDPLAN-->
+
+                <!-- First row -- just for ASSIGNMENT 4 (CHART)-->
+                <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && activityReport || medicationHistory">
+                  <div class="col">
+                    <div class="form-group">
+                      <mat-form-field  class="mat-input-form" type="text" name="patientIdForm" appearance="outline">
+                        <mat-label>Patient ID</mat-label>
+                        <input matInput [formControl]="patientIdForm" required>
+                        <mat-hint *ngIf="patientIdForm.untouched">Enter Patient's ID</mat-hint>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <!-- End: First row -- just for ASSIGNMENT 4 (CHART)-->
+                
+                  <!-- Second row for update & insert-->
+                  <div class="row">
+                      <div *ngIf="patientData && !addPatient" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Date of Birth</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="birthDateForm" required [(ngModel)]="patientData.birthDate" disabled="true">
+                          </div>
+                      </div>
+                      <div *ngIf="!patientData && addPatient" class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="birthDateForm" appearance="outline">
+                            <mat-label>Date of Birth</mat-label>
+                            <input matInput [formControl]="birthDateForm" required>
+                            <mat-hint *ngIf="birthDateForm.untouched">Enter patient's date of birth</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <div *ngIf="patientData && !addPatient" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Gender</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="genderForm" required [(ngModel)]="patientData.gender">
+                          </div>
+                      </div>
+                    <div *ngIf="!patientData && addPatient" class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="genderForm" appearance="outline">
+                          <mat-label>Gender</mat-label>
+                          <input matInput [formControl]="genderForm" required>
+                          <mat-hint *ngIf="genderForm.untouched">Enter patient's gender</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Second row -- just for CREATE MEDPLAN -->
+                  <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && createMedPlan">
+                    <div class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="startDate" appearance="outline">
+                          <mat-label>Start Date</mat-label>
+                          <input matInput [formControl]="medPlanStartDateForm" required>
+                          <mat-hint *ngIf="medPlanStartDateForm.untouched">Enter the start date of the Medication Plan</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="endDate" appearance="outline">
+                          <mat-label>End Date</mat-label>
+                          <input matInput [formControl]="medPlanEndDateForm" required>
+                          <mat-hint *ngIf="medPlanEndDateForm.untouched">Enter the end date of the Medication Plan</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                </div>
+                <!-- End: Second row -- just for CREATE MEDPLAN-->
+
+                <!-- Second row -- just for ASSIGNMENT 4 (CHART)-->
+                <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && activityReport && !medicationHistory">
+                  <div class="col">
+                    <div class="form-group">
+                      <mat-form-field  class="mat-input-form" type="text" name="recommendationForm" appearance="outline">
+                        <mat-label>Recommendation for patient</mat-label>
+                        <input matInput [formControl]="recommendationForm" required>
+                        <mat-hint *ngIf="recommendationForm.untouched">Enter a Recommendation</mat-hint>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Second row -- just for ASSIGNMENT 4 (CHART)-->
+
+                <!-- Third row -- contains table -- just for VIEW (ASSIGNMENT 4) -->
+                <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && !activityReport && !chartReady && medicationHistory" >
+                  <div  class="col" width="100%">
+                      <div class="mat-elevation-z8">
+                        <table mat-table [dataSource]="dataSource2">
+
+                          <!-- Medication Id Column -->
+                          <ng-container matColumnDef="grpcMedicationId">
+                            <th mat-header-cell *matHeaderCellDef> Medication ID </th>
+                            <td mat-cell *matCellDef="let element"> {{element.grpcMedicationId}} </td>
+                          </ng-container>
+
+                          <!-- Patient Id Column -->
+                          <ng-container matColumnDef="patientId">
+                              <th mat-header-cell *matHeaderCellDef> Patient ID </th>
+                              <td mat-cell *matCellDef="let element"> {{element.patientId}} </td>
+                            </ng-container>
+
+                          <!-- Name Column -->
+                          <ng-container matColumnDef="name">
+                              <th mat-header-cell *matHeaderCellDef> Name </th>
+                              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                          </ng-container>
+
+                          <!-- Status Column -->
+                          <ng-container matColumnDef="status">
+                              <th mat-header-cell *matHeaderCellDef> Status </th>
+                              <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+                          </ng-container>
+
+
+                          <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                          <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+
+                        </table>
+                        <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+                      </div>
+                  </div>
+                </div>
+                <!-- End: Third row -- contains Medication table -- just for VIEW (ASSIGNMENT 4)-->
+
+                 
+
+                  <!-- Third row for update & insert-->
+                  <div class="row">
+                      <div *ngIf="patientData && !addPatient" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Address</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="addressForm" required [(ngModel)]="patientData.address">
+                          </div>
+                      </div>
+                      <div *ngIf="!patientData && addPatient" class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="addressForm" appearance="outline">
+                            <mat-label>Address</mat-label>
+                            <input matInput [formControl]="addressForm" required>
+                            <mat-hint *ngIf="addressForm.untouched">Enter address</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <div *ngIf="patientData && !addPatient" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Medical Record</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="medicalRecordForm" required [(ngModel)]="patientData.medicalRecord">
+                          </div>
+                      </div>
+                      <div *ngIf="!patientData && addPatient" class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="medicalRecordForm" appearance="outline">
+                            <mat-label>Medical Record</mat-label>
+                            <input matInput [formControl]="medicalRecordForm" required>
+                            <mat-hint *ngIf="medicalRecordForm.untouched">Enter patient's medical record</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- Third row -- contains CHART -- just for VIEW -->
+                  <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && activityReport && chartReady && !medicationHistory" >
+                    <div  class="col" width="100%">
+                        <canvas baseChart
+                          [data]="pieChartData"
+                          [labels]="pieChartLabels"
+                          [chartType]="pieChartType">
+                        </canvas>
+                    </div>
+                  </div>
+                  <!-- End: Third row -- contains CHART -- just for VIEW-->
+
+
+                  <!-- Fourth row -- just for VIEW -->
+                  <div class="row" *ngIf="patientData && !addPatient">
+                      <div  class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Caregiver ID</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="caregiverIdForm" required 
+                            [(ngModel)]="patientData.caregiverDTO.caregiverId" disabled="!isPatient">
+                          </div>
+                      </div>
+                      <div *ngIf="patientData && !addPatient" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Caregiver Name</label>
+                            <input *ngIf="patientData && !addPatient" class="form-control" type="text" name="caregiverNameForm" required 
+                            [(ngModel)]="patientData.caregiverDTO.name" disabled="true">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End: Fourth row -- just for VIEW-->
+
+
+                  <!-- Fourth row -- just for INSERT-->
+                  <div class="row" *ngIf="!patientData && addPatient">
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="usernameForm" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input matInput [formControl]="usernameForm" required>
+                            <mat-hint *ngIf="usernameForm.untouched">Enter a username</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="passwrodForm" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input matInput [formControl]="passwordForm" required>
+                            <mat-hint *ngIf="passwordForm.untouched">Enter a password</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- End: Fourth row -- just for INSERT-->
+
+                  <!-- Fourth row -- contains table -- just for VIEW -->
+                 <div class="row" *ngIf="!patientData && !addPatient && !changeCaregiver && !createMedPlan && activityReport && chartReady && !medicationHistory" >
+                  <div  class="col" width="100%">
+                      <div class="mat-elevation-z8">
+                        <table mat-table [dataSource]="dataSource">
+
+                          <!-- Activity Id Column -->
+                          <ng-container matColumnDef="monitoredDataId">
+                            <th mat-header-cell *matHeaderCellDef> Activity ID </th>
+                            <td mat-cell *matCellDef="let element"> {{element.monitoredDataId}} </td>
+                          </ng-container>
+
+                          <!-- Patient Id Column -->
+                          <ng-container matColumnDef="patientId">
+                              <th mat-header-cell *matHeaderCellDef> Patient ID </th>
+                              <td mat-cell *matCellDef="let element"> {{element.patientId}} </td>
+                            </ng-container>
+
+                          <!-- Name Column -->
+                          <ng-container matColumnDef="name">
+                              <th mat-header-cell *matHeaderCellDef> Name </th>
+                              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                          </ng-container>
+
+                          <!-- Start Time Column -->
+                          <ng-container matColumnDef="startTime">
+                              <th mat-header-cell *matHeaderCellDef> Start Time </th>
+                              <td mat-cell *matCellDef="let element"> {{element.startTime}} </td>
+                          </ng-container>
+
+                          <!-- End Time Column -->
+                          <ng-container matColumnDef="endTime">
+                              <th mat-header-cell *matHeaderCellDef> End Time </th>
+                              <td mat-cell *matCellDef="let element"> {{element.endTime}} </td>
+                          </ng-container>
+
+                          <!-- Behavior Column -->
+                          <ng-container matColumnDef="behavior">
+                              <th mat-header-cell *matHeaderCellDef> Behavior </th>
+                              <td mat-cell *matCellDef="let element"> {{element.behavior}} </td>
+                          </ng-container>
+
+
+                          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                        </table>
+                        <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+                      </div>
+                  </div>
+                </div>
+                <!-- End: Fourth row -- contains table -- just for VIEW-->
+
+                  <!-- Fifth row -- contains MEDICATION PLANS -- just for VIEW -->
+                  <div class="row" *ngIf="patientData && !addPatient" >
+                    <div  class="col" width="100%">
+                        <div class="form-group">
+                          <!-- Card Header for Medication Plan List -->
+                          <h6 class="card-header bg-secondary font-weight-bold" *ngIf="patientData && !addPatient && !changeCaregiver && !createMedPlan">
+                            {{"Medication Plans"}}
+                          </h6>
+                          <!-- End: Card Header -->
+                          <mat-list>
+                            <mat-list-item *ngFor="let medPlan of patientData.medicationPlans" >
+                              <h2 class="font-weight-bold" matLine> {{"ID: "}} {{medPlan.medicationPlanId}} {{"Name: "}} {{medPlan.name}} </h2>
+                              <p matLine > {{medPlan.startDate}} {{"---"}} {{medPlan.endDate}} </p>
+                              <h2 class="font-weight-bold" matLine>Medications</h2>
+                              <mat-list matLine >
+                                <mat-list-item *ngFor="let medication of medPlan.medicationDTOs">
+                                  <h2 matLine > {{"Medication ID: "}} {{medication.medicationId}} {{"Medication Name: "}} {{medication.name}} </h2>
+                                  <p  matLine > {{"Side Effects: "}} {{medication.sideEffects}} </p>
+                                  <p  matLine > {{"Intake Interval: "}} {{medication.intakeInterval}} </p>
+                                  <p  matLine > {{"Dosage: "}} {{medication.dosage}} </p>
+                                </mat-list-item>
+                              </mat-list>
+                            </mat-list-item>
+                          </mat-list>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- End: Fifth row -- just for VIEW-->
+
+                  
+
+                 
+
+                  <!-- Fifth row -- just for INSERT-->
+                  <div class="row" *ngIf="!patientData && addPatient">
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="roleForm" appearance="outline">
+                            <mat-label>Role</mat-label>
+                            <input matInput [formControl]="roleForm" required>
+                            <mat-hint *ngIf="roleForm.untouched">Enter the role (PATIENT)</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col">
+                          <div class="form-group">
+                            <mat-form-field  class="mat-input-form" type="text" name="caregiverIdForm" appearance="outline">
+                              <mat-label>Caregiver ID</mat-label>
+                              <input matInput [formControl]="caregiverIdForm" required>
+                              <mat-hint *ngIf="caregiverIdForm.untouched">Enter the caregiver's ID</mat-hint>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                  </div>
+                  <!-- End: Fifth row -- just for INSERT-->
+              </div>
+            </div>
+              <!-- End: Card Body -->
+      
+            <!-- Card footer: holding the Save / Cancel and Delete button for single patient data -->
+            <div class="card-footer text-muted" *ngIf="!isPatient">
+            <div class="form-inline d-flex">
+              <!-- Save -->
+              <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="!addPatient && !changeCaregiver && !createMedPlan && !activityReport && !medicationHistory"
+                [disabled]="!hasPatientDataChanged() || isSaving || isRemoving" 
+                [ngClass]="{'disabled': !hasPatientDataChanged()}"
+                (click)="onPatientUpdate()">
+                <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+                <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+                Update Patient
+              </button>
+
+              <!-- Insert New Patient-->
+              <button *ngIf="addPatient && !changeCaregiver && !createMedPlan" type="button" class="btn btn-primary mr-2" role="button"
+              (click)="onPatientInsert()">
+                <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+                <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+                Insert New Patient
+              </button>
+
+              <!-- Cancel -->
+            <!--It is disaled if no change has been made-->
+            <button type="button" class="btn btn-outline-primary" role="button" *ngIf="!addPatient && !changeCaregiver && !createMedPlan && !activityReport && !medicationHistory"
+              [disabled]="!hasPatientDataChanged()"
+              [ngClass]="{'disabled': !hasPatientDataChanged() || isSaving || isRemoving}"
+              (click)="getPatientDetailsData(patientData.patientId)">
+              <i class="fas fa-times mr-2"></i>
+              Cancel
+            </button>
+
+            <button type="button" class="btn btn-outline-primary mr-2" role="button" *ngIf="addPatient || changeCaregiver || createMedPlan || activityReport || medicationHistory"
+              (click)="clearForm()">
+              <i class="fas fa-times mr-2"></i>
+              Clear Fields
+            </button>
+
+            <!-- Delete -->
+            <button type="button" class="btn btn-danger ml-auto" role="button" *ngIf="!addPatient && !changeCaregiver && !createMedPlan && !activityReport && !medicationHistory"
+              [disabled]="isRemoving || isSaving"
+              [ngClass]="{'disabled': isRemoving}" (click)="onPatientRemove()">
+              <i class="fas fa-trash" *ngIf="!isRemoving"></i>
+              <i class="fa fa-spinner fa-spin" *ngIf="isRemoving"></i>
+            </button>
+
+            <!-- Change Caregiver -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="changeCaregiver"
+            (click)="onChangeCaregiver()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Change Caregiver
+            </button>
+
+            <!-- Create Medicaiton Plan -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="createMedPlan"
+            (click)="onCreateMedPlan()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Create MedPlan
+            </button>
+
+            <!-- Show Patient History (CHART) -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="activityReport"
+            (click)="onGetPatientHistory()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Generate Activity Report
+            </button>
+
+            <!-- Insert Recommendation (CHART) -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="activityReport"
+            [disabled]="recommendationForm.untouched || recommendationForm.value===''"
+            (click)="onInsertRecommendation()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Insert Recommendation
+            </button>
+
+            <!-- Get Medication History -->
+            <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="medicationHistory"
+            (click)="onGetMedicationHistory()">
+            <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+            <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+            Get Medication History
+            </button>
+
+            </div>
+          </div>
+          <!-- End: Card footer -->
+             
+            </div>
+          </div>
+        </div>
+      </ng-container>

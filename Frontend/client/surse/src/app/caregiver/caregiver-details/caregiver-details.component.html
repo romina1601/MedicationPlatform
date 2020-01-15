@@ -1,0 +1,246 @@
+<ng-container *ngIf="!caregiverData && !addCaregiver">
+
+        <div class="row justify-content-center py-5">
+          <div class="alert alert-secondary border-secondary col-sm-11 col-md-8 text-center text-muted" role="alert">
+            <i class="fa fa-mouse-pointer mr-1" aria-hidden="true"></i>
+            Please select a caregiver
+          </div>
+        </div>
+      </ng-container>
+      
+      <ng-container *ngIf="caregiverData || addCaregiver">
+        <div class="row justify-content-center mt-4">
+          <div class="col">
+            <div class="card border-secondary">
+      
+              <!-- Card Header when selecting a caregiver: holding the caregiver ID & name -->
+              <h4 class="card-header bg-secondary" *ngIf="caregiverData && !addCaregiver">
+                {{ "ID: " }} {{ caregiverData.caregiverId }} {{ "Name: " }} {{ caregiverData.name }}
+              </h4>
+              <!-- End: Card Header -->
+      
+               <!-- Card Header when pressing add new Caregiver button: holding descriptive text -->
+               <h4 class="card-header bg-secondary" *ngIf="!caregiverData && addCaregiver">
+                {{"Add new caregiver"}}
+              </h4>
+              <!-- End: Card Header -->
+      
+              <!-- Card Body: holding the editable caregiver fields -->
+              <div class="card-body">
+                <div class="my-4">
+                  
+                  <!--Card Body when add new caregiver button is pressed-->
+                  <!-- First row for update & insert-->
+                  <div class="row">
+                      <div *ngIf="caregiverData && !addCaregiver" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Caregiver Name</label>
+                            <input *ngIf="caregiverData && !addCaregiver" class="form-control" type="text" name="nameForm" required [(ngModel)]="caregiverData.name">
+                          </div>
+                      </div>
+                    <div *ngIf="!caregiverData && addCaregiver" class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="name" appearance="outline">
+                          <mat-label>Caregiver Name</mat-label>
+                          <input matInput [formControl]="nameForm" required>
+                          <mat-hint *ngIf="nameForm.untouched">Enter caregiver's name</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Second row for update & insert-->
+                   <div class="row">
+                      <div *ngIf="caregiverData && !addCaregiver" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Date of Birth</label>
+                            <input *ngIf="caregiverData && !addCaregiver" class="form-control" type="text" name="birthDateForm" required [(ngModel)]="caregiverData.birthDate" disabled="true">
+                          </div>
+                      </div>
+                      <div *ngIf="!caregiverData && addCaregiver" class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="birthDateForm" appearance="outline">
+                            <mat-label>Date of Birth</mat-label>
+                            <input matInput [formControl]="birthDateForm" required>
+                            <mat-hint *ngIf="birthDateForm.untouched">Enter carfegiver's date of birth</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <div *ngIf="caregiverData && !addCaregiver" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Gender</label>
+                            <input *ngIf="caregiverData && !addCaregiver" class="form-control" type="text" name="genderForm" required [(ngModel)]="caregiverData.gender">
+                          </div>
+                      </div>
+                    <div *ngIf="!caregiverData && addCaregiver" class="col">
+                      <div class="form-group">
+                        <mat-form-field  class="mat-input-form" type="text" name="genderForm" appearance="outline">
+                          <mat-label>Gender</mat-label>
+                          <input matInput [formControl]="genderForm" required>
+                          <mat-hint *ngIf="genderForm.untouched">Enter caregiver's gender</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Third row for update & insert-->
+                  <div class="row">
+                      <div *ngIf="caregiverData && !addCaregiver" class="col">
+                          <div class="form-group">
+                            <label class="col-form-label" for="inputLarge">Address</label>
+                            <input *ngIf="caregiverData && !addCaregiver" class="form-control" type="text" name="addressForm" required [(ngModel)]="caregiverData.address">
+                          </div>
+                      </div>
+                      <div *ngIf="!caregiverData && addCaregiver" class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="addressForm" appearance="outline">
+                            <mat-label>Address</mat-label>
+                            <input matInput [formControl]="addressForm" required>
+                            <mat-hint *ngIf="addressForm.untouched">Enter address</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- Fifth row -- contains PATIENTS -- just for VIEW -->
+                  <div class="row" *ngIf="caregiverData && !addCaregiver" >
+                      <div  class="col" width="100%">
+                          <div class="form-group">
+                            <!-- Card Header for Medication Plan List -->
+                            <h6 class="card-header bg-secondary font-weight-bold">
+                              {{"Patients"}}
+                            </h6>
+                            <!-- End: Card Header -->
+                            <mat-list>
+                              <mat-list-item *ngFor="let patient of caregiverData.patients" >
+                                <h2 matLine > {{"ID: "}} {{patient.patientId}} {{"Name: "}} {{patient.name}} </h2>
+                                <p matLine > {{patient.birthDate}} {{patient.gender}} </p>
+                                <p matLine> {{patient.address}} </p>
+                                <p matLine> {{patient.medicalRecord}} </p>
+                                <p matLine>Medication Plans</p>
+                                <mat-list matLine>
+                                    <mat-list-item *ngFor="let medPlan of patient.medicationPlans" >
+                                        <h2 matLine > {{"ID: "}} {{medPlan.medicationPlanId}} {{"Name: "}} {{medPlan.name}} </h2>
+                                        <p matLine > {{medPlan.startDate}} {{medPlan.endDate}} </p>
+                                        <h2 matLine>Medications</h2>
+                                        <mat-list matLine>
+                                          <mat-list-item *ngFor="let medication of medPlan.medicationDTOs">
+                                            <h2 matLine > {{"ID: "}} {{medication.medicationId}} {{"Name: "}} {{medication.name}} </h2>
+                                            <p matLine > {{"Side Effects: "}} {{medication.sideEffects}} </p>
+                                            <p matLine > {{"Intake interval: "}} {{medication.intakeInterval}} </p>
+                                            <p matLine >{{"Dosage: "}} {{medication.dosage}}</p> 
+                                          </mat-list-item>
+                                        </mat-list>
+                                      </mat-list-item>
+                                </mat-list>
+                              </mat-list-item>
+                            </mat-list>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- End: Fifth row -- just for VIEW-->
+
+
+                   <!-- Fourth row -- just for INSERT-->
+                   <div class="row" *ngIf="!caregiverData && addCaregiver">
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="usernameForm" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input matInput [formControl]="usernameForm" required>
+                            <mat-hint *ngIf="usernameForm.untouched">Enter a username</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="passwrodForm" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input matInput [formControl]="passwordForm" required>
+                            <mat-hint *ngIf="passwordForm.untouched">Enter a password</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- End: Fourth row -- just for INSERT-->
+
+
+                  <!-- Fifth row -- just for INSERT-->
+                  <div class="row" *ngIf="!caregiverData && addCaregiver">
+                      <div class="col">
+                        <div class="form-group">
+                          <mat-form-field  class="mat-input-form" type="text" name="roleForm" appearance="outline">
+                            <mat-label>Role</mat-label>
+                            <input matInput [formControl]="roleForm" required>
+                            <mat-hint *ngIf="roleForm.untouched">Enter the role (CAREGIVER)</mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- End: Fifth row -- just for INSERT-->
+                
+                
+              </div>
+            </div>
+              <!-- End: Card Body -->
+
+              <!-- Card footer: holding the Save / Cancel and Delete button for single patient data -->
+            <div class="card-footer text-muted" *ngIf="!isCaregiver">
+                <div class="form-inline d-flex">
+                  <!-- Save -->
+                  <button type="button" class="btn btn-primary mr-2" role="button" *ngIf="!addCaregiver"
+                    [disabled]="!hasCaregiverDataChanged() || isSaving || isRemoving" 
+                    [ngClass]="{'disabled': !hasCaregiverDataChanged()}"
+                    (click)="onCaregiverUpdate()">
+                    <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+                    <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+                    Update Caregiver
+                  </button>
+
+                  <!-- Cancel -->
+                  <!--It is disaled if no change has been made-->
+                  <button type="button" class="btn btn-outline-primary" role="button" *ngIf="!addCaregiver"
+                  [disabled]="!hasCaregiverDataChanged()"
+                  [ngClass]="{'disabled': !hasCaregiverDataChanged() || isSaving || isRemoving}"
+                  (click)="getCaregiverDetailsData(caregiverData.caregiverId)">
+                  <i class="fas fa-times mr-2"></i>
+                  Cancel
+                  </button>
+
+                              <!-- Insert New Caregiver-->
+                  <button *ngIf="addCaregiver" type="button" class="btn btn-primary mr-2" role="button"
+                  (click)="onCaregiverInsert()">
+                    <i class="fas fa-check mr-2" *ngIf="!isSaving"></i>
+                    <i class="fa fa-spinner fa-spin mr-2" *ngIf="isSaving"></i>
+                    Insert New Caregiver
+                  </button>
+
+
+                  <button type="button" class="btn btn-outline-primary" role="button" *ngIf="addCaregiver"
+                  (click)="clearForm()">
+                  <i class="fas fa-times mr-2"></i>
+                  Clear Fields
+                  </button>
+
+
+                  <!-- Delete -->
+                  <button type="button" class="btn btn-danger ml-auto" role="button" *ngIf="!addCaregiver"
+                  [disabled]="isRemoving || isSaving"
+                  [ngClass]="{'disabled': isRemoving}" (click)="onCaregiverRemove()">
+                  <i class="fas fa-trash" *ngIf="!isRemoving"></i>
+                  <i class="fa fa-spinner fa-spin" *ngIf="isRemoving"></i>
+                </button>
+    
+    
+                </div>
+              </div>
+              <!-- End: Card footer -->
+      
+             
+            </div>
+          </div>
+        </div>
+      </ng-container>

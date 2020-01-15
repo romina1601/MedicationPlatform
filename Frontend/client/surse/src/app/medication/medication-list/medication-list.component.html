@@ -1,0 +1,67 @@
+<ng-container *ngIf="isProcessing; else medications">
+    <app-loader [isLoading]="isProcessing"></app-loader>
+  </ng-container>
+  
+  <!-- <ng-template #configuration> -->
+  <!-- <ng-container *ngIf="error; else data_container">
+      <app-alert [error]="error"></app-alert>
+    </ng-container> -->
+  
+  <ng-template #medications>
+  
+    <!-- Header -->
+    <div class="row my-4">
+      <div class="col">
+        <h4 class="font-weight-bold">
+          Medications
+          <button class="btn btn-primary mr-2 float-right"
+          (click) = "onAddMedication()">
+            <i class="fas fa-user-plus margin--right__sm"></i>
+            Add Medication
+          </button>
+
+          <button class="btn btn-primary mr-2 float-right"
+          (click) = "onAddMedicationToMedPlan()">
+            <i class="fas fa-plus margin--right__sm"></i>
+            Add Medication to MedPlan
+          </button>
+        </h4>
+      </div>
+    </div>
+    <!-- End: Header -->
+  
+    <div class="row mb-5 pb-5">
+  
+      <!-- Medication List column -->
+      <div class="col-sm-4">
+        <div class="col--cards">
+          <h6 class="col--cards__title text-muted margin--bottom__sm">Medications List</h6>
+          <div class="col--cards__wrapper col--cards__wrapper--list list-group">
+  
+            <!-- Medication Item -->
+            <app-medication-item *ngFor="let medication of medicationModel.all" [medicationData]="medication" [index]="medication.medicationId"
+              (selectedMedicationId)="onMedicationIdSelected($event)">
+            </app-medication-item>
+            <!-- End: Medication Item -->
+  
+          </div>
+        </div>
+      </div>
+      <!-- End: Medication List column -->
+  
+      <!-- Medication details column -->
+      <div class="col-sm-8">
+        <div class="col--cards">
+          <h6 class="col--cards__title text-muted margin--bottom__sm">Details</h6>
+          <div class="col--cards__wrapper">
+            <app-medication-details [addMedication]="addMedication" [medicationId]="medicationModel.selectedMedicationId" [addMedicationToMedPlan]="addMedicationToMedPlan"
+            (onSaveSuccess)="getAllMedications($event)">
+          </app-medication-details>
+          </div>
+        </div>
+      </div>
+      <!-- End: Medication details column -->
+  
+    </div>
+  
+  </ng-template>
