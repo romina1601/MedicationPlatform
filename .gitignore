@@ -15,6 +15,7 @@ yarn-error.log*
 /assignment1/src/main/resources/contracts/compiled
 /rabbitmq/src/main/resources/solidity/version2/compiled
 /rabbitmq/src/main/resources/contracts/compiled
+/Frontend
 # Runtime data
 pids
 *.pid
